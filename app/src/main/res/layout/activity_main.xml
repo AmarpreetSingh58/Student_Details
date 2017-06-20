@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amarpreetsinghprojects.newprojectmail.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:paddingLeft="16dp"
+        android:textColor="@color/list_item_textColor"
+        android:background="@color/list_item_color"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="2dp"/>
+    <TableRow>
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/listView"></ListView>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/container"
+            android:background="@color/fragmentColor"></FrameLayout>
+    </TableRow>
+
+</TableLayout>
